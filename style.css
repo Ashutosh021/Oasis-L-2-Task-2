@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Delicious Handrawn', cursive;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    background-color: rgb(222, 222, 238);
+    padding: 20px;
+}
+
+.navbar {
+    background-color: #2fff95;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+}
+
+.navbar h1{
+    font-size: 1.5rem;
+    flex-basis: 20%;
+}
+.navbar ul {
+    flex-basis: 70%;
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    justify-content: flex-end;
+
+}
+
+.navbar ul a{
+    padding: 5px;
+    list-style: none;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: rgb(228, 97, 97);
+}
+.navbar ul a:hover{
+    color: blue;
+}
+
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 80px;
+}
+
+.mainLeft {
+    width: 300px;
+    padding: 35px;
+    border: 2px solid black;
+    margin: auto;
+    background-color: rgb(171 225 168);
+    border-radius: 5px;
+}
+
+.mainLeft img {
+    border-radius: 15px;
+
+}
+
+.mainLeft h2,
+h4 {
+    padding-top: 10px;
+    text-align: center;
+}
+
+.mainRight {
+
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.mainRight h3 {
+    padding: 20px 0px;
+    font-size: 1.5rem;
+}
+
+.mainRight p {
+    font-size: 1.2rem;
+    width: 100%;
+}
+
+.mainRight a {
+    margin: auto;
+    padding-top: 30px;
+}
+.mainRight a button{
+    color: blue;
+    background-color: white;
+    border: 2px solid blue;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 10px;
+}
+
+ .mainRight a button:hover {
+    color: white;
+    background-color: blue;
+    border: 2px solid white;
+} 
+
+footer{
+    background-color:rgb(164, 164, 233);
+    text-align: center;
+}
+
+@media (max-width:400px){
+    .main{
+        margin-top: 60px;
+    }
+    .navbar{
+        height: 70px;
+        
+    }
+    .navbar h1{
+        font-size: 15px;
+        font-weight: bold;
+    }
+}
